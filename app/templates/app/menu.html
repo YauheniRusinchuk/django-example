@@ -1,0 +1,15 @@
+<div class='menu'>
+  {% load static %}
+  <a href='{% url 'index' %}'>
+    ГЛАВНАЯ
+  </a>
+
+  <form method="POST" action='{% url 'search' %}'>
+    {% csrf_token %}
+    <input type="search" name="search_text" class='search_form' placeholder="Найди бля..." />
+  </form>
+
+  <a href='{% url 'about' %}'>
+    МЫ ТУТ РЕШАЕМ
+  </a>
+</div>

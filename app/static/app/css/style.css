@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* MENU */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 1px 1px #e6e6e6;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #78baf0;
+  background-color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #78baf0;
+  border-radius: 20px;
+  padding: 3px 15px;
+  transition-property: background-color, color;
+  transition-duration: 0.4s;
+}
+
+.menu a:hover {
+  color: white;
+  background-color: #78baf0;
+}
+
+
+/* END MENU */
+
+/* MAIN */
+
+.main {
+  width: 95%;
+  margin: 60px auto;
+}
+
+.container {
+  -moz-column-width: 350px;
+    -webkit-column-width: 350px;
+  -moz-column-gap: 10px;
+  -webkit-column-gap: 10px;
+}
+
+#post {
+  display: inline-block;
+  width:  100%;
+  margin-bottom: 10px;
+  /*border: 2px solid #78baf0;*/
+  border-radius: 5px;
+  text-align: center;
+   /*padding-top: 10px;*/
+}
+
+
+
+
+.post_title {
+  width: 100%;
+}
+
+.post_title a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  font-size: 19px;
+  font-weight: bold;
+  color:  black;
+  text-shadow: 0 0 3px black;
+}
+
+.post_title a:hover {
+  text-decoration: underline;
+}
+
+.post_media {
+  width: 100%;
+}
+
+.post_media img {
+  width: 100%;
+  margin-bottom: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.post_body {
+
+}
+
+.post_body p {
+
+}
+
+
+/* END MAIN */
+
+
+/* ABOUT */
+.about {
+  width: 60%;
+  height: 300px;
+  margin: 100px auto;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* END ABOUT */
+
+
+
+/* PHTOTS */
+
+/* end  PHoTOS */
+
+/* SEARCH FORM */
+.search_form {
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 3px 10px;
+  border: 2px solid #78baf0;;
+  border-radius: 20px;
+  outline: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* END SEARCH */
+
+
+/* DETAIL PHOTO */
+.detail_photo_view {
+  width: 70%;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.detail_photo_view p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.photo_view img {
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* END PHOTO */
+
+/* DETAL VIEW */
+
+.detail_post {
+  width: 60%;
+  margin: 0 auto;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail_post h1 {
+  text-transform: uppercase;
+}
+
+.detail_post img {
+  margin: 10px auto;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.detail_post p {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* END VIEW */
+
+/* FORM COMMENTS */
+.post_form {
+  width: 60%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text_comment_form {
+  width: 400px;
+  padding: 5px 15px;
+  margin: 5px;
+  outline: none;
+  font-family: 'Open Sans Condensed', sans-serif;
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+.text_comment_form:focus {
+  border: 2px solid black;
+  box-shadow:  0 0 10px black;
+}
+
+.btn_form {
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 5px 15px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px black;
+}
+
+/* END FORM */
+
+
+/* COMMENTS */
+.comments {
+  width: 60%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.comments label {
+  font-weight: bold;
+  color: #78baf0;
+  border-bottom: 1px solid #78baf0;
+}
+
+.comment {
+  margin: 30px auto;
+}
+
+.comment p {
+  display: inline-block;
+  background-color: #3f91fc;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 3px;
+  box-shadow: 0 0 10px blue;
+}
+
+
+
+/* END COMMENTS */

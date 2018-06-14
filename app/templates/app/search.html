@@ -1,0 +1,27 @@
+{% extends 'app/index.html' %}
+
+
+
+{% block content %}
+
+<div class='container'>
+    {% if result %}
+      {% for i in result %}
+        <div id='post'>
+          <div class='post_title'>
+            <a href="{% url 'detail' pk=i.pk %}">{{i.result_title}}</a>
+          </div>
+          {% if i.image %}
+              <div class='post_media'>
+                <img src="{{i.image.url}}" />
+              </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% else %}
+      <p> NOT FOUND </p>
+    {% endif %}
+</div>
+
+
+{% endblock content %}

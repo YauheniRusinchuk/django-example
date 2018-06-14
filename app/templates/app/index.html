@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{% static 'app/css/style.css' %}" />
+  <link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <title>HOME</title>
+</head>
+<body>
+  {% include 'app/menu.html' %}
+<div class='main'>
+  {% block content %}
+  {% endblock content %}
+</div>
+<script src="{% static 'app/script/main.js' %}"></script>
+</body>
+</html>

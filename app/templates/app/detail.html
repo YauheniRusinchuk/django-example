@@ -1,0 +1,28 @@
+{% extends 'app/index.html' %}
+
+
+{% block content %}
+<div class='detail_post'>
+  <h1>{{post.title}}<h1>
+  <img src="{{post.image.url}}" />
+  <p>{{post.body}}</p>
+</div>
+
+
+<div class=comments>
+  <label> COMMENTS SUKA : </label>
+  {% for comment in comments %}
+  <div class='comment'>
+    <p>{{comment.text}}</p>
+  </div>
+  {% endfor %}
+</div>
+<div class='post_form'>
+  <form method="POST" class='form_post'>
+    {% csrf_token %}
+    {{form}}
+    <button class='btn_form' type="submit">ДОБАВИТЬ</button>
+  </form>
+</div>
+
+{% endblock content  %}
